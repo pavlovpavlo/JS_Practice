@@ -1,0 +1,107 @@
+	body 
+	{
+        margin: 0;
+        padding: 0;
+  		line-height: 1;
+  		color: white;
+ 		background: #2d4259;
+    }
+    .slideshow-container
+    {
+      max-width:1000px;
+      position: relative;
+      margin: auto;  
+    }
+	.prev, .next
+    {
+        cursor: pointer;
+        position: absolute;
+        text-decoration: none;
+        color:white;
+        top:50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 18px;
+        -webkit-transition: all 0.6s ease;
+           -moz-transition: all 0.6s ease;
+            -ms-transition: all 0.6s ease;
+             -o-transition: all 0.6s ease;
+                transition: all 0.6s ease;
+        -webkit-border-radius: 0 3px 3px 0;
+                border-radius: 0 3px 3px 0;
+    }
+    .next
+    {
+        right: 0;
+        -webkit-border-radius: 3px 0 0 3px;
+                border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover
+    {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .text
+    {
+        padding: 8px 12px;
+        position: absolute;
+        bottom:0;
+    }
+    .dot
+    {
+        display: flex;
+       cursor: pointer;
+       height: 13px;
+       width: 13px;
+       margin: 0 2px;
+       background-color: #bbb;
+       -webkit-border-radius: 50%;
+               border-radius: 50%;
+       display: inline-block;
+       -webkit-transition: background-color 1s ease;
+          -moz-transition: background-color 1s ease;
+           -ms-transition: background-color 1s ease;
+            -o-transition: background-color 1s ease;
+               transition: background-color 1s ease;
+    }
+    .active, dot:hover
+    {
+        background-color: #717171;
+    }
+    .fade
+    {
+        -webkit-animation-name:  fade;
+           -moz-animation-name:  fade;
+             -o-animation-name:  fade;
+                animation-name:  fade;
+        -webkit-animation-duration: 1.5s;
+           -moz-animation-duration: 1.5s;
+             -o-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+    }
+    #my-slide
+    {
+        width: 100%;
+    }
+    .dot-container
+    {
+        text-align: center;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: 4;  }
+        to {opacity: 1;  }
+    }
+    @-o-keyframes fade {
+        from { opacity: 4; }
+        to {opacity: 1;  }
+    }
+    @-moz-keyframes fade {
+        from {opacity: 4;  }
+        to {opacity: 1;  }
+    }
+    @keyframes fade {
+        from {opacity: 4;  }
+        to {opacity: 1;  }
+    }
+

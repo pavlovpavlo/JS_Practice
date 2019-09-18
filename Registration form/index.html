@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Встраивание JavaScript кода в HTML страницу</title>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" type="text/css" href="css\main.css">
+</head>
+
+<body>
+    <div class="register-title">
+      <h1>Welcome</h1>
+    </div>
+    <form action="#" name='reg_form' class="form-auth">
+      <div class="register-switch">
+          <input type="radio" name="sex" value="F" id="sex-f" class="register-switch-input" checked>
+          <label for="sex-f" class="register-switch-label">Female</label>
+          <input type="radio" name="sex" value="M" id="sex-m" class="register-switch-input">
+          <label for="sex-m" class="register-switch-label">Male</label>
+      </div>
+    	<input type="text" name="email" class="form-input" data-ptrn='\b[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}\b' placeholder="Email Adress">
+    	<input type="password" name="password" class="form-input" data-ptrn='\S' placeholder="Password">
+    	<input type="submit" name="submit" class="form-submit">
+    </form>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

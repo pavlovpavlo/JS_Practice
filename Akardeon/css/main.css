@@ -1,0 +1,36 @@
+	body 
+	{
+        margin: 0;
+        padding: 0;
+  }
+  button.accordion
+  {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    -webkit-transition: all 1s;
+       -moz-transition: all 1s;
+        -ms-transition: all 1s;
+         -o-transition: all 1s;
+            transition: all 1s;
+  }
+  button.accordion.active,
+  button.accordion:hover
+  {
+    background-color: #ddd;
+  }
+  div.panel.show
+  {
+    display: block;
+  }
+  div.panel
+  {
+    padding: 0 18px;
+    background-color:white;
+    display: none;
+  }
